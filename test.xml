@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type='text/css' href='/css/style.css'?> 
+<root>
+    <module lecturer="1234567">Interactive Web Application&#33;
+        <student><name>KyuTae Han</name></student>
+        <!-- <student><name>KyuTae Han</name></student> -->
+        <![CDATA[
+            <student><name>this will be shown as a plain text</name></student>
+        ]]>
+
+    </module>        
+    
+</root>
