@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type='text/css' href='/css/style.css'?> 
+<document>
+    <!-- namespaces are Important for creating XML documents containing different types of data -->
+    <!-- We implement namespaces by attaching prefixes to elements and attributes -->
+<!--     <it:module lecturer="Mark" xmlns:it="https://cct.ie">Info Retrieval and Data Management</it:module> -->
+    <module lecturer="Mark" xmlns:it="https://cct.ie">Info Retrieval and Data Management</module>
+    <ca>
+        <title>Assignment 1</title>
+        <submission_time>23:59</submission_time>
+        <submission_date>30/10/2020</submission_date>
+    </ca>           
+    <!-- ctrl + / for commenting -->
+</document>
