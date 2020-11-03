@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:simpleType name="numeric">
+        <xsd:restriction base="xsd:integer">
+        <!-- <xsd:restriction base="xsd:string">     -->
+            <xsd:pattern value="[0‐9]" />  
+        </xsd:restriction>
+    </xsd:simpleType>
+
+    <xsd:simpleType name="character">
+        <xsd:restriction base="xsd:string">
+            <xsd:pattern value="[a-z]" />
+        </xsd:restriction>
+    </xsd:simpleType>
+    
+    <xsd:element name="car" type="character" />
+    <xsd:element name="num" type="numeric" />
+    <xsd:element name="exercise" type="Texercise" />
+    
+    <xsd:complexType name="Texercise">
+        <xsd:sequence>
+            <xsd:element ref="car" minOccurs="6" maxOccurs="6" />
+            <xsd:element ref="num" minOccurs="2" maxOccurs="2" />
+            <!-- <xsd:element ref="car" />
+            <xsd:element ref="num" minOccurs="2" maxOccurs="2" />
+            <xsd:element ref="car" />
+            <xsd:element ref="num" minOccurs="3" maxOccurs="3" />
+            <xsd:element ref="car" /> -->
+        </xsd:sequence>
+    </xsd:complexType>
+</xsd:schema>
