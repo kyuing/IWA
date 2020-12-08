@@ -10,7 +10,6 @@ var router = express(); //We set our routing to be handled by Express
 var server = http.createServer(router); //This is where our server gets created
 
 router.use(express.static(path.resolve(__dirname,'views'))); //We serve static content from "views" folder
-
 // Function to read in XML file and convert it to JSON
 function xmlFileToJs(filename, cb) {
   var filepath = path.normalize(path.join(__dirname, filename));
